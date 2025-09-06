@@ -25,7 +25,7 @@ namespace ivana
                 options.AddPolicy("AllowSpecificOrigin",
                     policy => policy.AllowAnyOrigin()
                                     .AllowAnyHeader()
-                                    .AllowAnyMethod());
+                                    .AllowAnyMethod()); 
             });
 
             var app = builder.Build();
